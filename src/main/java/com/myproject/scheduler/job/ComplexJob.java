@@ -7,15 +7,15 @@ import org.springframework.stereotype.Component;
 import java.time.LocalDateTime;
 
 @Component
-public class SimpleJob implements Job {
-    private static final Logger log = LoggerFactory.getLogger(SimpleJob.class);
+public class ComplexJob implements Job {
+    private static final Logger log = LoggerFactory.getLogger(ComplexJob.class);
 
     public void run() {
-        log.info("Executing simple job: " + LocalDateTime.now());
+        log.info("Executing complex job: " + LocalDateTime.now());
     }
 
     @Override
     public String getName() {
-        return "Simple job";
+        return "Complex Job";
     }
 }
